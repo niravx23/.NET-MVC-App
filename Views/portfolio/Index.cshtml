@@ -1,0 +1,114 @@
+﻿
+<html>
+
+
+<head>
+    <link rel="stylesheet" href="~/css/about.css">
+
+</head>
+
+
+<body>
+
+
+
+    <div class="nav-bar">
+        <div class="logo-title">
+            Conceptive Commerce
+            <div class="logo-tag">360° Ecommerce service</div>
+        </div>
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <a class="nav-item" href="~/LoginLogic/logout">Logout</a>
+        }
+        else
+        {
+            <a class="nav-item" href="~/LoginLogic/login">Login</a>
+        }
+
+        <a class="nav-item" href="~/LoginLogic/signUp">Contact us</a>
+        <a class="nav-item" href="~/LoginLogic/signUp">About</a>
+    </div>
+
+
+    <div class="portfolio-title">PortFolio<font style="color:orange; ">.</font></div>
+    <hr class="divider1">
+
+    <div class="projects-title">Our Projects<font style="color:orange; ">.</font></div>
+
+
+    <div class="backdrop1" >
+    <div class="website-image-container">
+
+        <div class="website-container-items" >
+            <div class="website-preview-image1" ></div>
+            <div class="website-footer">Camamach</div>
+        </div>
+
+        <div class="website-container-items">
+            <div class="website-preview-image2"></div>
+            <div class="website-footer">KLinq</div>
+        </div>
+
+        <div class="website-container-items">
+            <div class="website-preview-image3"></div>
+            <div class="website-footer">Stella Mode</div>
+        </div>
+
+        <div class="website-container-items">
+            <div class="website-preview-image4"></div>
+            <div class="website-footer">Q Clothing</div>
+        </div>
+
+        <div class="website-container-items">
+            <div class="website-preview-image5"></div>
+            <div class="website-footer">Doctorforyou</div>
+        </div>
+
+        <div class="website-container-items">
+            <div class="website-preview-image6"></div>
+            <div class="website-footer">Riva Fashion</div>
+        </div>
+
+        <div class="website-container-items">
+            <div class="website-preview-image7"></div>
+            <div class="website-footer">Simond Store</div>
+        </div>
+
+        <div class="website-container-items">
+            <div class="website-preview-image8"></div>
+            <div class="website-footer">U Bargain</div>
+        </div>
+
+        <div class="website-container-items">
+            <div class="website-preview-image9"></div>
+            <div class="website-footer">Solo Luxury</div>
+        </div>
+
+        <div class="website-container-items">
+            <div class="website-preview-image10"></div>
+            <div class="website-footer">Techman Consulting</div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="subscribe-main">
+
+
+        <div class="subscribe">
+            <div class="submsg">
+                <div class="submsg1">Subscribe to receive.</div>
+                <div class="submsg2">Monthly stories and insights</div>
+            </div>
+        </div>
+
+        <div class="subscribe-text"><input type="text" class="text-box1" placeholder="Enter Email" /></div>
+
+    </div>
+
+</body>
+</html>
+
+

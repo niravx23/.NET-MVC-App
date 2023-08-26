@@ -1,0 +1,115 @@
+﻿@model project.empData
+
+<head>
+    <link rel="stylesheet" href="~/css/forms.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+
+<div class="nav-bar">
+    <div class="logo-title">
+        Conceptive Commerce
+        <div class="logo-tag">360° Ecommerce service</div>
+    </div>
+
+    <a class="nav-item" href="~/LoginLogic/signUp">SignUp</a>
+
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <a class="nav-item" href="~/LoginLogic/logout">Logout</a>
+    }
+    else
+    {
+        <a class="nav-item" href="~/LoginLogic/login">Login</a>
+    }
+    <a class="nav-item" href="~/LoginLogic/signUp">Contact us</a>
+    <a class="nav-item" href="~/LoginLogic/signUp">About</a>
+</div>
+
+<div class="module-title">Database Authentication Module</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+    <section class="bg-gray-50  min-h-screen flex items-center justify-center rounded -2x1">
+
+        <div class="bg-gray-100 flex rounded-2x1 shadow-1g max-2-3x1 p-5">
+
+            <div class="sm:w-1/2  px-13">
+                <h2 class="font-bold text-3x2 text-[#002D74]">Login</h2>
+                <p class="text-sm mt-4 text-[#002D74]">For Registered Users.</p>
+
+                <div class="flex flex-col gap-0.2 w-100">
+
+                    <div class="p-2 mt-0.1 mb-0.2">Employee ID</div>
+                    <div class=" mt-3 rounded -x2  border">
+                        @Html.EditorFor(model => model.userName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.userName, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="p-2 mt-0.1">Password</div>
+                    <div class=" mt-3 rounded -x2  border" type="hidden">
+                        @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                    </div>
+
+                    <input type="submit" value="login" class="p-3 mt-8 bg-[#002D74] rounded -x3 text-white py-2">
+
+                    <div class="mt-10  items-center text-gray-500">
+                        <hr class="border-gray-500" />
+                    </div>
+
+                </div>
+
+
+                </div>
+
+            <div class="sm:block hidden w-1/2 p-5">
+                <img class="rounded -5x1" src="https://img.freepik.com/premium-vector/3d-user-login-form-page_169241-6920.jpg" alt="" />
+            </div>
+
+        </div>
+
+    </section>
+
+
+    @*<div class="forms-main">
+
+
+        <div class="forms-item-text">
+            @Html.LabelFor(model => model.userName, htmlAttributes: new { @class = "control-label col-md-2" }, labelText: "EmployeeID")
+        </div>
+
+        <div class="forms-item-box">
+            @Html.EditorFor(model => model.userName, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.userName, "", new { @class = "text-danger" })
+        </div>
+
+
+        <div class="forms-item-text">
+            @Html.LabelFor(model => model.password, htmlAttributes: new { @class = "control-label col-md-2" }, labelText: "Password")
+        </div>
+
+        <div class="forms-item-box">
+            @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+        </div>
+
+
+
+
+        <div class="forms-item-box">
+            <input type="submit" value="login" class="btn btn-default" />
+        </div>
+
+
+    </div>*@
+
+}
+
+
+

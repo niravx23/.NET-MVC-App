@@ -1,0 +1,333 @@
+﻿body {
+}
+
+.backdrop1{
+    height : 1500px ;
+    background : rgb(240, 243, 244) ;
+    border-bottom : solid 2px rgb(166, 183, 163) ;
+}
+
+.nav-bar {
+    margin: -10px;
+    padding: 16px;
+    display: flex;
+    background: rgb(213, 213, 213);
+    background-image: url("../resources/logo.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 0.3%;
+    background-size: contain;
+    box-shadow: 2px 3px 3px grey;
+    justify-content: space-between;
+}
+
+.logo-tag {
+    font-size: 15px;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.logo-title {
+    text-shadow: 2px 2px 5px rgb(128, 128, 128);
+    inline-size: 400px;
+    overflow-wrap: break-word;
+    margin-right: 200px;
+    margin-left: 100px;
+    align-self: flex-start;
+    font-size: 30px;
+}
+
+.nav-item {
+    background: rgb(124, 106, 106);
+    color: rgb(240, 243, 244);
+    text-decoration: none;
+    box-shadow: 5px 7px 7px grey;
+    padding: 10px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-self: flex-end;
+    font-family: 'Californian FB';
+    font-size: 17px;
+    width: 10vw;
+    height: 2.5vw;
+}
+
+    .nav-item:hover {
+        color: black;
+        background: white;
+        text-shadow: 1px 1px 5px rgb(128, 128, 128);
+    }
+
+
+
+.portfolio-title {
+    margin: 40px;
+    padding: 10px;
+    font-family: 'Arial Rounded MT';
+    font-size: 37px;
+}
+
+.projects-title {
+    margin: 40px;
+    padding: 10px;
+    font-family: 'Baskerville Old Face';
+    font-size: 30px;
+}
+
+
+.website-image-container {
+    margin: 20px;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.website-container-items {
+
+    box-shadow: 10px 8px 6px rgb(166, 183, 163) ;
+    margin: 40px;
+    height: 300px;
+    width: 350px;
+}
+
+    .website-container-items a{
+        z-index : 5 ;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+    }
+
+
+.website-preview-image1{
+    height: 250px;
+    width: 350px;
+    background: url('https://cdn-jcjcp.nitrocdn.com/BcVzpAcTxGEmShXpUeZEjYSNhgBEvTvD/assets/images/optimized/wp-content/uploads/2022/09/e2bfff0e9212b1db8c4188d3b70ab723.screencapture-camamach-2022-09-09-12_36_12.png');
+    background-size: cover;
+    background-position: center top;
+    transition: ease-in 2s;
+}
+
+.website-preview-image1:hover {
+    transition: ease-out 4s;
+    background-position: bottom;
+}
+
+
+.website-preview-image2 {
+    height: 250px;
+    width: 350px;
+    background: url('https://cdn-jcjcp.nitrocdn.com/BcVzpAcTxGEmShXpUeZEjYSNhgBEvTvD/assets/images/optimized/wp-content/uploads/2022/09/629ef705bad23b8f3f5a0bae4a9f63e0.screencapture-klinq-en-2022-09-09-12_40_57.png '); background-size: cover;
+    background-position: center top;
+    transition: ease-in 2s;
+}
+
+    .website-preview-image2:hover {
+        transition: ease-out 4s;
+        background-position: bottom;
+    }
+
+
+
+.website-preview-image3 {
+    height: 250px;
+    width: 350px;
+    background: url('https://cdn-jcjcp.nitrocdn.com/BcVzpAcTxGEmShXpUeZEjYSNhgBEvTvD/assets/images/optimized/wp-content/uploads/2022/09/aa6a39cc5fd8e86df184169e477b55b3.stellamodeshop-nl-web-full-img-1.png');
+    background-size: cover;
+    background-position: center top;
+    transition: ease-in 2s;
+}
+
+    .website-preview-image3:hover {
+        transition: ease-out 4s;
+        background-position: bottom;
+    }
+
+
+
+.website-preview-image4 {
+    height: 250px;
+    width: 350px;
+    background: url('https://cdn-jcjcp.nitrocdn.com/BcVzpAcTxGEmShXpUeZEjYSNhgBEvTvD/assets/images/source/wp-content/uploads/2022/09/839e423bd73c5d1e53a722b2d530f0d1.screencapture-qclothing-co-uk-2022-09-09-12_38_03.png');
+    background-size: cover;
+    background-position: center top;
+    transition: ease-in 2s;
+}
+
+    .website-preview-image4:hover {
+        transition: ease-out 4s;
+        background-position: bottom;
+    }
+
+
+
+.website-preview-image5 {
+    height: 250px;
+    width: 350px;
+    background: url('https://cdn-jcjcp.nitrocdn.com/BcVzpAcTxGEmShXpUeZEjYSNhgBEvTvD/assets/images/optimized/wp-content/uploads/2023/03/e0f1b861a4cbdd5faf0c2684163475ce.%CE%9F-%CE%BA%CE%B1%CE%BB%CF%8D%CF%84%CE%B5%CF%81%CE%BF%CF%82-%CE%93%CE%B9%CE%B1%CF%84%CF%81%CE%BF%CF%82-%CE%99%CE%B1%CF%84%CF%81%CE%B9%CE%BA%CF%8C%CF%82-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BF%CE%B3%CE%BF%CF%82-_-doctorforyou.gr_.png');
+    background-size: cover;
+    background-position: center top;
+    transition: ease-in 2s;
+}
+
+    .website-preview-image5:hover {
+        transition: ease-out 4s;
+        background-position: bottom;
+    }
+
+.website-preview-image6 {
+    height: 250px;
+    width: 350px;
+    background: url('https://cdn-jcjcp.nitrocdn.com/BcVzpAcTxGEmShXpUeZEjYSNhgBEvTvD/assets/images/optimized/wp-content/uploads/2022/09/b0483d2e1b38b9d82760a2230aaccfc8.screencapture-rivafashion-en-2022-09-09-12_43_48.png');
+    background-size: cover;
+    background-position: center top;
+    transition: ease-in 2s;
+}
+
+    .website-preview-image6:hover {
+        transition: ease-out 4s;
+        background-position: bottom;
+    }
+
+.website-preview-image7 {
+    height: 250px;
+    width: 350px;
+    background: url('https://cdn-jcjcp.nitrocdn.com/BcVzpAcTxGEmShXpUeZEjYSNhgBEvTvD/assets/images/optimized/wp-content/uploads/2022/09/694a721bc16236985bca81bcb9e6f75b.screencapture-simondstore-2022-09-09-12_40_20.png');
+    background-size: cover;
+    background-position: center top;
+    transition: ease-in 2s;
+}
+
+    .website-preview-image7:hover {
+        transition: ease-out 4s;
+        background-position: bottom;
+    }
+
+.website-preview-image8 {
+    height: 250px;
+    width: 350px;
+    background: url('https://cdn-jcjcp.nitrocdn.com/BcVzpAcTxGEmShXpUeZEjYSNhgBEvTvD/assets/images/optimized/wp-content/uploads/2022/09/6f120fe6783407c2201fd2c54b9a782f.screencapture-ubargain-au-2022-09-09-12_35_22.png');
+    background-size: cover;
+    background-position: center top;
+    transition: ease-in 2s;
+}
+
+    .website-preview-image8:hover {
+        transition: ease-out 4s;
+        background-position: bottom;
+    }
+
+.website-preview-image9 {
+    height: 250px;
+    width: 350px;
+    background: url('https://cdn-jcjcp.nitrocdn.com/BcVzpAcTxGEmShXpUeZEjYSNhgBEvTvD/assets/images/optimized/wp-content/uploads/2022/09/31c69f9b7dc7aaa6cbe6ddf243454929.Screenshot_8.png');
+    background-size: cover;
+    background-position: center top;
+    transition: ease-in 2s;
+}
+
+    .website-preview-image9:hover {
+        transition: ease-out 4s;
+        background-position: bottom;
+    }
+
+.website-preview-image10 {
+    height: 250px;
+    width: 350px;
+    background: url('https://cdn-jcjcp.nitrocdn.com/BcVzpAcTxGEmShXpUeZEjYSNhgBEvTvD/assets/images/optimized/wp-content/uploads/2022/09/022521e04561a59e58c8810cc6975747.Technman-Consulting-LLC-_-Home.png');
+    background-size: cover;
+    background-position: center top;
+    transition: ease-in 2s;
+}
+
+    .website-preview-image10:hover {
+        transition: ease-out 4s;
+        background-position: bottom;
+    }
+
+
+
+
+
+
+
+
+.website-footer {
+    border-bottom : solid 1px rgb(128, 128, 128);
+    border-top    : solid 0.2px rgb(0, 0, 0) ;
+    width: 350px;
+    line-height: 45px;
+    height: 50px;
+    background: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+.website-container-items:hover {
+    box-shadow: 2px 5px 10px black;
+}
+
+
+
+
+.divider1 {
+    margin: -30px;
+    width: 100%;
+    height: 1px;
+}
+
+
+.subscribe-main {
+    display: flex;
+    background: rgb(213, 213, 213);
+    margin-top : 50px ;
+    height: 200px;
+    width: 100%;
+}
+
+.subscribe {
+    display: flex;
+    margin-bottom: 100px;
+    overflow-wrap: break-word;
+    width: 60%;
+}
+
+.submsg {
+    overflow-wrap: break-word;
+}
+
+.submsg1 {
+    font-size: 50px;
+    margin: 40px;
+    margin-bottom: 10px;
+}
+
+.submsg2 {
+    font-size: 20px;
+    margin: 40px;
+    margin-top: 10px;
+}
+
+
+.subscribe-text {
+    margin: 100px;
+    height: 100px;
+    width: 400px;
+}
+
+input.text-box1 {
+    margin: -20px;
+    width: 450px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    
+    font-family: 'Times New Roman', Times, serif;
+    background: rgb(208, 236, 238);
+    align-self: center;
+}
+
+    input.text-box1::selection {
+    }

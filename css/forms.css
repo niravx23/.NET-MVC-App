@@ -1,0 +1,131 @@
+﻿*{
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    font-family: 'Bookman Old Style';
+}
+
+
+.nav-bar {
+    margin: -5px;
+    padding: 16px;
+    display: flex;
+    background: rgb(213, 213, 213);
+    background-image: url("../resources/logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 0.3%;
+    box-shadow: 2px 3px 3px grey;
+    justify-content: space-between;
+}
+
+.logo-tag {
+    font-size: 15px;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.logo-title {
+    text-shadow: 2px 2px 5px rgb(128, 128, 128);
+    inline-size: 400px;
+    overflow-wrap: break-word;
+    margin-right: 200px;
+    margin-left: 100px;
+    align-self: flex-start;
+    font-size: 30px;
+}
+
+.nav-item {
+    background: rgb(124, 106, 106);
+    text-decoration: none;
+    box-shadow: 5px 7px 7px grey;
+    padding: 10px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    align-self: flex-end;
+    color: aliceblue;
+    font-family: 'Californian FB';
+    font-size: 17px;
+    width: 10vw;
+    height: 50px; 
+}
+
+    .nav-item:hover {
+        color: black;
+        background: white;
+        text-shadow: 1px 1px 5px rgb(128, 128, 128);
+    }
+
+
+
+.portfolio-title {
+    margin: 40px;
+    padding: 10px;
+    font-family: 'Arial Rounded MT';
+    font-size: 37px;
+}
+
+.projects-title {
+    margin: 40px;
+    padding: 10px;
+    font-family: 'Baskerville Old Face';
+    font-size: 30px;
+}
+
+.module-title{
+    margin : 10px ;
+    font-size :  25px ;
+}
+
+.forms-main {
+    display: flex;
+    flex-flow: column;
+    margin: 50px;
+    background : rgb(13, 114, 124) ;
+    box-shadow : 5px 5px 5px rgb(20, 186, 184) ;
+    width : 400px ;
+    text-align : center ;
+    margin-left : 600px ;
+    height : 450px ;
+}
+
+input[type="text"] {
+    width: 100% ; 
+}
+
+.forms-item-text {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.forms-item-box{
+
+    align-self : center ;
+    text-align : center ;
+    margin-top :  20px ;
+    width: 400px;
+}
+
+
+.forms-item-box [type=text] {
+
+    height : 30px ;
+    width  : 310px ;
+}
+
+    .forms-item-box [type=submit]{
+        margin-top : 40px ;
+        font-size   : 20px ;
+        height: 30px;
+        width: 310px;
+    }
+
+
